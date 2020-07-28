@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MyChatMy</title>
+		<link rel="stylesheet" type="text/css" href="css/ChadStyle.css">
+	</head>
+	<body>
+		<!-- Register and Login page -->
+		<div id="rlpage" style="display: block">
+			<!-- Register section -->
+			<div class="register centertext">
+				<div>
+					<a class="bluetext">Register</a>
+				</div>
+				<!-- Username -->
+				<div style="margin-top: 7vh;">
+					<a class="smoketext">Username</a><br>
+					<input class="rlinputbox" type="text" id="rusername"/>
+				</div>
+				<!-- Password -->
+				<div style="margin-top: 4vh;">
+					<a class="smoketext">Password</a><br>
+					<input class="rlinputbox" type="password" id="rpassword"/>
+				</div>
+				<!-- Submit button -->
+				<div style="margin-top: 2vh;">
+					<button class="submitbutton" id="rsubmit">Submit</button>
+				</div>
+			</div>
+			<!-- Login section -->
+			<div class="login centertext">
+				<div>
+					<a class="lightbluetext">Login</a>
+				</div>
+				<!-- Username -->
+				<div style="margin-top: 7vh;">
+					<a class="smoketext">Username</a><br>
+					<input class="rlinputbox" type="text" id="lusername"/>
+				</div>
+				<!-- Password -->
+				<div style="margin-top: 4vh;">
+					<a class="smoketext">Password</a><br>
+					<input class="rlinputbox" type="password" id="lpassword"/>
+				</div>
+				<!-- Submit button -->
+				<div style="margin-top: 2vh;">
+					<button class="submitbutton" id="lsubmit">Submit</button>
+				</div>
+			</div>
+		</div>
+		<!-- Chat page -->
+		<div id="chatpage" style="display: none;">
+			<!-- Chat and messages -->
+			<div class="chatbox">
+				<div class="textbox" id="textbox" style="font: whitney; color: white;"></div>
+				<div class="inputbox">
+					<!-- Message Input Box -->
+					<input class="input" id="message" type="text" disabled/>
+					<button class="sendbutton" id="send"></button>
+				</div>
+			</div>
+			<!-- User and Group selection -->
+			<div class="selectionbox">
+				<select class="dropdown" id="groups">
+					<option value="-----">-----</option>
+				</select>
+				<select class="dropdown" id="users">
+					<option value="-----">-----</option>
+				</select>
+			</div>
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="script/sha256.js"></script>
+	<script src="script/ChadScript.js"></script>
+</html>
